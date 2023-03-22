@@ -4,7 +4,7 @@ from django.db import models
 
 class Profile(models.Model):
     name=models.CharField(max_length=256)
-    # profile_image=models.ImageField()
+    profile_image=models.ImageField('images/')
     
     def __str__(self):
         return self.name
