@@ -3,7 +3,7 @@
 from pathlib import Path
 import os
 
-server_url='https://thehuntsman4.pythonanywhere.com/api/'
+server_url='https://thehuntsman4.pythonanywhere.com'
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,9 +24,7 @@ SECRET_KEY = 'django-insecure-tk^eh8(kada)gh6h-4&$v*h42_vm=qsoe8+yf^&pqkur=bjh&0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-'thehuntsman4.pythonanywhere.com',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -115,7 +113,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-CORS_ORIGIN_ALLOW_ALL = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -129,6 +126,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'http://127.0.0.1:8000',
-    
 ]
